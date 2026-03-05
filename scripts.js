@@ -1,9 +1,23 @@
 let imagem = document.querySelector(".imagem-cop")
-let circulo = document.querySelector(".circulo")
+let span = document.querySelector("span")
 
 function trocaimagem(endereco) {
-    imagem.src = endereco
+
+    imagem.style.opacity = "0"
+
+    setTimeout(() => {
+        imagem.src = endereco
+        imagem.style.opacity = "1"
+    }, 300)
+
 }
+
 function trocacor(cor) {
-    circulo.style.background = cor
+
+    span.style.opacity = "0"
+
+    setTimeout(() => {
+        span.style.color = cor
+        span.style.opacity = "1"
+    }, 300)
 }

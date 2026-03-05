@@ -5,38 +5,30 @@
     font-family: "Poppins", serif;
 }
 
-body {
-    padding-top: 20px;
-    padding-right: 100px;
-    padding-left: 100px;
-}
+`
 
 .conteudo {
     width: 100%;
-    /*largura*/
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .textos {
-    width: 600px;
-    /*largura*/
+    width: 100%;
 }
 
 h2 {
     color: #333;
-    /*cor do texto*/
     font-size: 60px;
-    /*tamanho do texto*/
     font-weight: bold;
-    /*grossura do texto*/
 }
 
 span {
     color: #017143;
     font-size: 70px;
     font-weight: 900;
+    transition: opacity 1.5s ease;
 }
 
 p {
@@ -55,10 +47,10 @@ button {
 }
 
 .imagem {
-    width: 600px;
     display: flex;
-    justify-content: flex-end;
-    margin-top: 250px;
+    align-items: center;
+    justify-content: center;
+  
 }
 
 button:hover {
@@ -68,22 +60,18 @@ button:hover {
 
 .menu {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
     justify-content: center;
+h3{
+    font-size: 30px;
+    color: #333;
+}
 }
 
 .botao-menu:hover{
     transform: translateY(-25px);
-}
-
-.circulo {
-    background:#0c955c;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    clip-path: circle(600px at right 800px);
-    z-index: -1;
 }
 
 .botao-menu {
@@ -94,8 +82,26 @@ button:hover {
 
 .logo {
     width: 80px;
+    position: absolute;
+    top: 50px;
 }
 
 .imagem-cop {
-    width: 350px;
+    width: 340px;
+    transition: opacity 1.5s ease;
+}
+
+.animar {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding-right: 100px;
+    padding-left: 100px;
 }
